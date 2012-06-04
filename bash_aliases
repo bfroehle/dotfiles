@@ -22,3 +22,6 @@ function mgrep {
     grep --color=always $* 2>&1 | less -R
 }
 complete -F _longopt -o default mgrep
+
+# LaTeX
+alias ltx="latexmk -pdf"
