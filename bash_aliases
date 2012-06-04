@@ -16,3 +16,9 @@ function killvnc {
 # Git
 alias gk="gitk --all 2>&1 > /dev/null &"
 alias gg="git gui &"
+
+# grep, with paging
+function mgrep {
+    grep --color=always $* 2>&1 | less -R
+}
+complete -F _longopt -o default mgrep
