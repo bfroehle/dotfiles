@@ -12,3 +12,7 @@ function killvnc {
     rm -f /tmp/.X$1-lock
     rm -f /tmp/.X11-unix/X$1
 }
+
+# Git
+alias gk="gitk --all 2>&1 > /dev/null &"
+alias gg="git gui &"
