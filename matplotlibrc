@@ -201,7 +201,7 @@ backend      : TkAgg
 # default face and edge color, default tick sizes,
 # default fontsizes for ticklabels, and so on.  See
 # http://matplotlib.sourceforge.net/api/axes_api.html#module-matplotlib.axes
-#axes.hold           : True    # whether to clear the axes by default on
+axes.hold            : False    # whether to clear the axes by default on
 #axes.facecolor      : white   # axes background color
 #axes.edgecolor      : black   # axes edge color
 #axes.linewidth      : 1.0     # edge linewidth
@@ -300,7 +300,7 @@ backend      : TkAgg
 ### IMAGES
 #image.aspect : equal             # equal | auto | a number
 #image.interpolation  : bilinear  # see help(imshow) for options
-#image.cmap   : jet               # gray | jet etc...
+image.cmap   : hot                # gray | jet etc...
 #image.lut    : 256               # the size of the colormap lookup table
 #image.origin : upper             # lower | upper
 #image.resample  : False
