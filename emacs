@@ -6,9 +6,13 @@
 ;; Highlight trailing whitespace
 (setq-default show-trailing-whitespace t)
 
-;; Add Cython mode
 (add-to-list 'load-path "~/.emacs.d/vendor")
+
+;; Add Cython mode
 (load "cython-mode")
+
+;; Add xclip support
+(load "xclip")
 
 ;; Enable mouse support
 (unless window-system
