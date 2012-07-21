@@ -1,0 +1,3 @@
+[submodule "emacs.d/vendor/mo-git-blame"]
+	path = emacs.d/vendor/mo-git-blame
+	url = git://github.com/mbunkus/mo-git-blame.git
