@@ -48,6 +48,10 @@
 ;; y/n instead of yes/no
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Use the system wide default browser
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "xdg-open")
+
 ;; https://github.com/tsgates/pylookup/
 (setq pylookup-dir "~/.emacs.d/vendor/pylookup")
 (add-to-list 'load-path pylookup-dir)
