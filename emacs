@@ -45,6 +45,9 @@
 (global-set-key (kbd "C-c g c") 'mo-git-blame-current)
 (global-set-key (kbd "C-c g f") 'mo-git-blame-file)
 
+;; y/n instead of yes/no
+(fset 'yes-or-no-p 'y-or-n-p)
+
 ;; https://github.com/tsgates/pylookup/
 (setq pylookup-dir "~/.emacs.d/vendor/pylookup")
 (add-to-list 'load-path pylookup-dir)
