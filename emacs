@@ -37,6 +37,16 @@
 (setq matlab-indent-level 2)
 (put 'upcase-region 'disabled nil)
 
+;; Diff current buffer with file contents
+(defun diff-current-buffer-with-file ()
+  "View the differences between the current buffer and its associated file."
+  (interactive)
+  (diff-buffer-with-file (current-buffer)))
+(global-set-key (kbd "C-c =") 'diff-current-buffer-with-file)
+
+;; Use unified diffs
+(setq diff-switches "-u")
+
 ;; mo-git-blame
 ;; https://github.com/mbunkus/mo-git-blame
 (add-to-list 'load-path "~/.emacs.d/vendor/mo-git-blame")
