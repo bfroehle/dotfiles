@@ -4,3 +4,6 @@
 [submodule "emacs.d/vendor/pylookup"]
 	path = emacs.d/vendor/pylookup
 	url = git://github.com/tsgates/pylookup.git
+[submodule "emacs.d/vendor/emacs-color-theme-solarized"]
+	path = emacs.d/vendor/emacs-color-theme-solarized
+	url = https://github.com/sellout/emacs-color-theme-solarized
