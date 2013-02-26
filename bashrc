@@ -57,6 +57,22 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# Turn on CCache
+if [ -d /usr/lib/ccache ]; then
+    PATH=/usr/lib/ccache:$PATH
+fi
+export CCACHE_DIR=/scratch/$USER.ccache
+
+# Preliminary path setting.  This goes before sourcing bash aliases, which
+# may rely on programs stored in the local bin directory.
+if [ -d $HOME/.gem/ruby/1.8/bin ]; then
+    PATH=$HOME/.gem/ruby/1.8/bin:$PATH
+fi
+if [ -d $HOME/.local/bin ]; then
+    PATH=$HOME/.local/bin:$PATH
+fi
+export PATH
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -72,3 +88,16 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+export EDITOR="emacs -nw"
+export ROOT3DG=$HOME/3dg
+
+export DEBFULLNAME="Bradley M. Froehle"
+export DEBEMAIL="brad.froehle@gmail.com"
+
+# Path additions
+export PATH=$PATH:/usr/local/matlab-r2010b/bin
+
+# Remove Duplicates
+export PATH=`awk -F: '{for(i=1;i<=NF;i++){if(!($i in a)){a[$i];printf s$i;s=":"}}}'<<<$PATH`
+# export PYTHONPATH=$(cleanpath "$PYTHONPATH")
