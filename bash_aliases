@@ -50,3 +50,6 @@ alias ipy3dg3=`cat <<-EOF
 EOF`
 
 alias p="ps fjx | less -FRSX"
+
+# Identify
+alias idmovie="mplayer -vo null -ao null -identify -frames 0"
