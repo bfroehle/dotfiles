@@ -7,3 +7,6 @@
 [submodule "emacs.d/vendor/Highlight-Indentation-for-Emacs"]
 	path = emacs.d/vendor/Highlight-Indentation-for-Emacs
 	url = git://github.com/antonj/Highlight-Indentation-for-Emacs.git
+[submodule "emacs.d/vendor/git-tools.el"]
+	path = emacs.d/vendor/git-tools.el
+	url = git://github.com/quodlibetor/git-tools.el.git
