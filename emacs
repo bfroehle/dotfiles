@@ -98,23 +98,6 @@
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "xdg-open")
 
-;; https://github.com/tsgates/pylookup/
-(setq pylookup-dir "~/.emacs.d/vendor/pylookup")
-(add-to-list 'load-path pylookup-dir)
-;; load pylookup when compile time
-(eval-when-compile (require 'pylookup))
-;; set executable file and db file
-(setq pylookup-program (concat pylookup-dir "/pylookup.py"))
-(setq pylookup-db-file (concat pylookup-dir "/pylookup.db"))
-;; set search option if you want
-;; (setq pylookup-search-options '("--insensitive" "0" "--desc" "0"))
-;; to speedup, just load it on demand
-(autoload 'pylookup-lookup "pylookup"
-  "Lookup SEARCH-TERM in the Python HTML indexes." t)
-(autoload 'pylookup-update "pylookup"
-  "Run pylookup-update and create the database at `pylookup-db-file'." t)
-(global-set-key (kbd "C-c h") 'pylookup-lookup)
-
 ;; CPython 3.x Style
 ;; http://mail.python.org/pipermail/python-dev/2008-May/079582.html
 (c-add-style
