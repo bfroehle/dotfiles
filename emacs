@@ -9,7 +9,7 @@
 ;; Vendor extensions:
 (add-to-list 'load-path "~/.emacs.d/vendor")
 (require 'cython-mode)
-(require 'xclip)
+;(require 'xclip)
 (require 'diff-mode-)
 ;(require 'julia-mode)
 ;(setq auto-mode-alist
