@@ -7,3 +7,6 @@
 [submodule "emacs.d/vendor/emacs-color-theme-solarized"]
 	path = emacs.d/vendor/emacs-color-theme-solarized
 	url = https://github.com/sellout/emacs-color-theme-solarized
+[submodule "emacs.d/vendor/Highlight-Indentation-for-Emacs"]
+	path = emacs.d/vendor/Highlight-Indentation-for-Emacs
+	url = git://github.com/antonj/Highlight-Indentation-for-Emacs.git

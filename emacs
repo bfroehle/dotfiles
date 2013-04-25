@@ -135,3 +135,8 @@
    (c-block-comment-prefix . "* ")
   )
 )
+
+; https://github.com/antonj/Highlight-Indentation-for-Emacs
+(add-to-list 'load-path "~/.emacs.d/vendor/Highlight-Indentation-for-Emacs")
+(require 'highlight-indentation)
+(add-hook 'python-mode-hook 'highlight-indentation)
