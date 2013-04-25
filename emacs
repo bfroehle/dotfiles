@@ -136,6 +136,9 @@
   )
 )
 
+; Markdown Mode
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
 ; https://github.com/antonj/Highlight-Indentation-for-Emacs
 (add-to-list 'load-path "~/.emacs.d/vendor/Highlight-Indentation-for-Emacs")
 (require 'highlight-indentation)
