@@ -10,3 +10,6 @@
 [submodule "emacs.d/vendor/git-tools.el"]
 	path = emacs.d/vendor/git-tools.el
 	url = git://github.com/quodlibetor/git-tools.el.git
+[submodule "emacs.d/vendor/autopair"]
+	path = emacs.d/vendor/autopair
+	url = git://github.com/capitaomorte/autopair.git

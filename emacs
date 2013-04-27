@@ -18,6 +18,10 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/git-tools.el")
 (require 'git-tools)
 
+(add-to-list 'load-path "~/.emacs.d/vendor/autopair")
+(require 'autopair)
+(autopair-global-mode)
+
 ;; Lambda mode
 (require 'lambda-mode)
 (add-hook 'python-mode-hook #'lambda-mode 1)
